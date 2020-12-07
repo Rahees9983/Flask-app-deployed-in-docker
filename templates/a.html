@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index</title>
+</head>
+
+<body>
+  <h1 style="color: blue">Index</h1>
+  <p style="color: green">Below is the flask1.py content of the file </p>
+  <p style="color: rgb(255, 0, 179)">
+    <br> from flask import Flask, render_template</br>
+    <br>app = Flask(__name__)</br>
+    
+    
+    <br>@app.route('/')</br>
+    <br>    def hello():</br> 
+    <br>        return 'This is a default route below is the list avialable route in on this server '</br>
+
+    <br>@app.route('/post', methods = ['GET','POST'])<br>
+    <br>    def insert_data():</br>
+    <br>        return render_template("index.html")</br>
+    
+    <br>@app.route('/see_flask_py_content', methods = ['GET','POST'])</br>
+    <br>    def insert_data1():</br>
+    <br>    return render_template("a.html")</br>
+    
+        <br>if __name__ == '__main__':</br>
+        <br>app.run(debug=True,port=5000,host='0.0.0.0')</br>
+    </p>
+  
+  
+
+</body>
+
+</html>
